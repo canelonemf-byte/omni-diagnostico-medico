@@ -1,42 +1,49 @@
 # omni-diagnostico-medico
 
-OMNI: proyecto de diagnóstico médico para todos.
+# omni-diagnostico-medico  OMNI: proyecto de diagnóstico médico para todos.  **Autor:** Lázaro López Paz · **Licencia:** CC BY-NC-SA 4.0 (ver `LICENSE`)
 
-**Autor:** Lázaro López Paz · **Licencia:** CC BY-NC-SA 4.0 (ver `LICENSE`)
+## Autoría
 
-## Carpetas de origen en Google Drive
+- **Autor:** Lázaro López Paz, El Prat de Llobregat, Barcelona, España
+- **ORCID:** [0000-0001-8601-1963](https://orcid.org/0000-0001-8601-1963)
+- Elaborado con asistencia de inteligencia artificial
+- Sin afiliaciones institucionales
 
-- https://drive.google.com/drive/folders/1Sd_45QszLqCMe4ZRvvN3QoL5hjYBMKNf
+## Estado
 
-## Archivos incluidos
+Proyecto en desarrollo / documentación. No afirmar validación experimental salvo que el código o los informes del propio repositorio lo demuestren.
 
-- `docs/omni_2_proyecto.md` ← omni_2_proyecto.pdf
-- `docs/proyecto_diagnostico_medico_para_todos.md` ← proyecto_diagnóstico_médico_para_todos.pdf
-- `gemini-code-1790593049750.txt` ← gemini-code-1790593049750.txt
+## Contenido (raíz)
 
-## Pendiente: en Drive
+```
+DATOS_PENDIENTES.md
+datos_pendientes.yaml
+diagnostico/
+docs/
+gemini-code-1790593049750.txt
+LICENSE
+README.md
+REFERENCIAS.md
+requirements.txt
+tests/
+```
 
-Archivos binarios (presentaciones, PDFs grandes, vídeos, imágenes, zips, docx) que no se pudieron pasar a texto. Siguen en Drive:
+## Instalación
+
+```bash
+pip install -r requirements.txt
+```
 
 
-### Subcarpetas no importadas (pendiente: en Drive)
+## Uso
 
-- OMNI_k_llp_elprat-APP · https://drive.google.com/drive/folders/1PFiFoq--z0qFofIXV2FQx2XzAxtrWW5J
+Archivos Python principales (revisar cada uno antes de ejecutar):
+- `diagnostico/__init__.py`
+- `diagnostico/pendientes.py`
+- `tests/conftest.py`
+- `tests/test_diagnostico.py`
+
 
 ## Licencia
 
-Bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es), como declaran los documentos del proyecto. Ver `LICENSE`.
-
----
-Los archivos `.trashed-*`, las copias («- copia») y los duplicados entre carpetas no se han listado.
-
-## Referencias
-Ver [REFERENCIAS.md](REFERENCIAS.md).
-
-## Módulo funcional `diagnostico` (esperando datos)
-
-diagnostico: métricas de evaluación de una prueba diagnóstica a partir de la tabla 2×2: sensibilidad, especificidad, valores predictivos según la prevalencia (Bayes), razones de verosimilitud e intervalos de Wilson al 95 % (Altman y Bland 1994).
-
-AVISO MÉDICO: herramienta estadística de investigación. NO diagnostica, NO es un producto sanitario, NO sustituye el juicio clínico y NO está validada clínicamente. Cualquier uso clínico requiere estudios de validación y marcado CE conforme al Reglamento (UE) 2017/745.
-
-`pip install -r requirements.txt && python -m pytest -q`. Los datos que faltan están en [DATOS_PENDIENTES.md](DATOS_PENDIENTES.md).
+Ver archivo `LICENSE` (o `LICENSE.md`) en la raíz. Documentación bajo CC BY 4.0 cuando aplique; código habitualmente MIT, salvo indicación contraria.
